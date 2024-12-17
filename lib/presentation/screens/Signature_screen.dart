@@ -32,6 +32,11 @@ class _SignatureScreenState extends State<SignatureScreen> {
     return Scaffold(
       backgroundColor: Colors.grey.shade300,
       appBar: AppBar(
+        leading: GestureDetector(
+          onTap: () {
+            Navigator.of(context).pop();
+          },
+            child: Icon(Icons.arrow_back, color: Colors.white,)),
         backgroundColor: AppColor.primaryColor,
         title: Text(
           appStrings.signature,

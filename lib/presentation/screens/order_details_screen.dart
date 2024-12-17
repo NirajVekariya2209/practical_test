@@ -17,6 +17,11 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.of(context).pop();
+            },
+            child: Icon(Icons.arrow_back, color: Colors.white,)),
         backgroundColor: AppColor.primaryColor,
         title: Text(
           appStrings.orderDetails,

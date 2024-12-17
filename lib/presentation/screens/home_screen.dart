@@ -125,6 +125,7 @@ class _MyHomePageState extends State<MyHomeScreen> {
       builder: (context, state) {
         return Scaffold(
           appBar: AppBar(
+            automaticallyImplyLeading: false,
             backgroundColor: AppColor.primaryColor,
             title: Text(
               appStrings.addOrder,
